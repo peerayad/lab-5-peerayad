@@ -46,7 +46,6 @@ Live at: **https://lab-5-peerayad-event.streamlit.app/**
 
 ## Diagrams
 
-Source files are in the [`picture/`](picture/) folder. **They must be committed and pushed to GitHub** for images to show on the web; if you only see captions/alt text, run `git add picture/` and push.
 
 ### Component A — System map (Maason interview)
 
@@ -70,7 +69,15 @@ Source files are in the [`picture/`](picture/) folder. **They must be committed 
 
 ## Schema
 
-See `schema.sql` for the full Supabase schema.
+### Database schema (Supabase)
+
+<p>
+  <img src="./picture/database-schema.png" alt="Supabase database schema: borrow_requests, equipment, users, events" width="100%" />
+</p>
+
+*Relationship:* `borrow_requests.equipment_id` → `equipment.id`
+
+See `schema.sql` for the full SQL and any additional tables.
 
 **Tables:**
 - `equipment` — inventory with 8-digit asset tags
